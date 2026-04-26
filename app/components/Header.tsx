@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
+import { Phone, Star } from 'lucide-react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,10 +36,10 @@ export default function Header() {
 
           <div className="hidden md:flex gap-2 items-center ml-4">
             <a href="tel:5878178111" className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/10 text-primary font-semibold text-sm border border-border-light hover:bg-white/20 transition-all">
-              <span className="mr-1">☎️</span> Call
+              <Phone size={18} className="mr-1.5" /> Call
             </a>
             <Link href="/contact" className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-accent text-white font-semibold text-[0.95rem] btn-lift hover:bg-accent-hover hover:shadow-lg transition-all">
-              <span className="mr-1">⭐</span> Get Quote
+              <Star size={18} className="mr-1.5 fill-white" /> Get Quote
             </Link>
           </div>
 

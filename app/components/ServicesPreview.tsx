@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
+import { ArrowRight, Shield, CheckCircle } from 'lucide-react';
 
 const services = [
   {
@@ -8,21 +9,21 @@ const services = [
     description: 'Hand-pick every piece of litter and debris from your property. Professional team removes waste, trash, and hazardous materials safely and efficiently. Improves curb appeal instantly and attracts quality tenants.',
     image: '/images/litter-removal.png',
     alt: 'Workers in safety vests removing litter from a commercial property',
-    benefits: ['✓ Instant curb appeal', '✓ Safer environment', '✓ Professional image'],
+    benefits: ['Instant curb appeal', 'Safer environment', 'Professional image'],
   },
   {
     title: 'Power Sweeping',
     description: 'Industrial-grade mechanical sweeping removes gravel, sand, salt, and debris that accumulates in parking lots. Prevents these materials from entering drainage systems and causing costly repairs. Extends pavement life.',
     image: '/images/power-sweeping.png',
     alt: 'Mechanical street sweeper cleaning a parking lot',
-    benefits: ['✓ Prevents drainage issues', '✓ Protects pavement', '✓ Long-term savings'],
+    benefits: ['Prevents drainage issues', 'Protects pavement', 'Long-term savings'],
   },
   {
     title: 'Lot Cleaning & Maintenance',
     description: 'Complete lot maintenance including sweeping, washing, debris removal, and seasonal cleanup. Year-round care keeps your property looking pristine and prevents liability issues. Regular maintenance saves money on repairs.',
     image: '/images/lot-cleaning.png',
     alt: 'Clean well-maintained commercial parking lot',
-    benefits: ['✓ Liability protection', '✓ Preventive care', '✓ Peace of mind'],
+    benefits: ['Liability protection', 'Preventive care', 'Peace of mind'],
   },
 ];
 
@@ -60,13 +61,13 @@ export default function ServicesPreview() {
                   <p className="text-text-secondary text-[0.95rem] mb-5 leading-relaxed">{service.description}</p>
                   <div className="flex flex-col gap-1.5 mb-5">
                     {service.benefits.map((benefit) => (
-                      <p key={benefit} className="text-sm font-medium text-accent">
-                        {benefit}
+                      <p key={benefit} className="text-sm font-medium text-accent flex items-center gap-2">
+                        <CheckCircle size={16} className="flex-shrink-0" /> {benefit}
                       </p>
                     ))}
                   </div>
                   <a href="tel:5878178111" className="inline-flex items-center gap-1.5 font-semibold text-sm text-accent link-arrow hover:gap-2 transition-all">
-                    Get a Free Quote <span>→</span>
+                    Get a Free Quote <ArrowRight size={16} />
                   </a>
                 </div>
               </div>
@@ -76,8 +77,8 @@ export default function ServicesPreview() {
 
         <ScrollReveal delay={1}>
           <div className="text-center mt-12">
-            <p className="text-text-secondary mb-6 text-lg">
-              <strong>Every service includes:</strong> Licensed &amp; insured team • Commercial-grade equipment • Flexible scheduling • 100% satisfaction guarantee
+            <p className="text-text-secondary mb-6 text-lg flex items-center justify-center gap-2 flex-wrap">
+              <span><strong>Every service includes:</strong> Licensed &amp; insured team • Commercial-grade equipment • Flexible scheduling • 100% satisfaction guarantee</span>
             </p>
             <Link href="/services" className="inline-flex items-center justify-center px-7 py-3 rounded-full border-2 border-accent text-accent font-semibold hover:bg-accent-light transition-colors">
               Explore All Services

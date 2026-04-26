@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
+import { Star, Phone, MessageCircle } from 'lucide-react';
 
 interface CTABannerProps {
   title?: string;
@@ -26,13 +27,13 @@ export default function CTABanner({
           <p className="text-text-on-dark text-lg max-w-[520px] mx-auto mb-8">{description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <Link href={buttonHref} className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-accent text-white font-semibold btn-lift hover:bg-accent-hover hover:shadow-lg transition-all">
-              <span className="mr-2">⭐</span> {buttonText}
+              <Star size={20} className="mr-2 fill-white" /> {buttonText}
             </Link>
             <a href={`tel:+1${phoneNumber}`} className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/20 border border-white/40 text-white font-semibold btn-lift hover:bg-white/30 hover:border-white transition-all">
-              <span className="mr-2">☎️</span> Call 587-817-8111
+              <Phone size={20} className="mr-2" /> Call 587-817-8111
             </a>
             <a href={`https://wa.me/1${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#25D366]/90 text-white font-semibold btn-lift hover:bg-[#25D366] transition-all">
-              <span className="mr-2">💬</span> WhatsApp
+              <MessageCircle size={20} className="mr-2" /> WhatsApp
             </a>
           </div>
         </ScrollReveal>
