@@ -27,23 +27,29 @@ export default function HeroSection() {
 
           {/* Heading */}
           <h1 className="animate-hero-heading text-white text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight tracking-tight mb-5">
-            Litter Removal, Power Sweeping &amp; Lot Cleaning in Edmonton, AB
+            Professional Street &amp; Property Sweeping Services in Edmonton
           </h1>
+
+          {/* Subheadline */}
+          <p className="animate-hero-text text-accent text-lg md:text-xl font-semibold mb-3 max-w-[520px]">
+            Clean. Safe. Reliable. Trusted by 200+ properties across Edmonton.
+          </p>
 
           {/* Subtext */}
           <p className="animate-hero-text text-text-on-dark text-lg md:text-xl mb-9 max-w-[520px] leading-relaxed">
-            Whether it&apos;s spring time or any time — we keep your commercial
-            properties pristine, safe, and inviting for tenants and customers alike.
+            Professional litter removal, power sweeping, and lot cleaning that improves curb appeal, prevents liability, and protects your property investment.
           </p>
 
-          {/* Buttons */}
+          {/* Buttons - Conversion focused */}
           <div className="animate-hero-buttons flex flex-col sm:flex-row gap-4">
-            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-accent text-white font-semibold btn-lift hover:bg-accent-hover hover:shadow-lg">
-              Get a Free Quote
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-accent text-white font-semibold hover:bg-accent-hover hover:shadow-lg transition-all active:scale-95 btn-lift">
+              <span className="text-lg mr-2">⭐</span>
+              Request a Free Quote
             </Link>
-            <Link href="/services" className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-white/40 text-white font-semibold btn-lift hover:border-white hover:bg-white/10">
-              Our Services →
-            </Link>
+            <a href="tel:5878178111" className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-white/60 text-white font-semibold hover:border-white hover:bg-white/10 transition-all active:scale-95 btn-lift">
+              <span className="text-lg mr-2">☎️</span>
+              Call Now: 587-817-8111
+            </a>
           </div>
 
           {/* Mini stats */}
