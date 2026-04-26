@@ -1,10 +1,10 @@
-import HeroSection from './components/HeroSection';
-import ServicesPreview from './components/ServicesPreview';
-import WhyChooseUs from './components/WhyChooseUs';
-import StatsCounter from './components/StatsCounter';
-import Testimonials from './components/Testimonials';
-import ServiceAreas from './components/ServiceAreas';
-import CTABanner from './components/CTABanner';
+import HeroSection from '@/app/components/HeroSection';
+import ServicesPreview from '@/app/components/ServicesPreview';
+import WhyChooseUs from '@/app/components/WhyChooseUs';
+import StatsCounter from '@/app/components/StatsCounter';
+import Testimonials from '@/app/components/Testimonials';
+import ServiceAreas from '@/app/components/ServiceAreas';
+import CTABanner from '@/app/components/CTABanner';
 
 export default function HomePage() {
   return (

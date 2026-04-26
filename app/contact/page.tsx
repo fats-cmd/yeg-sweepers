@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import ScrollReveal from '../components/ScrollReveal';
-import ContactForm from '../components/ContactForm';
+import ScrollReveal from '@/app/components/ScrollReveal';
+import ContactForm from '@/app/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us',

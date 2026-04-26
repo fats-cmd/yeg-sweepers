@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import ScrollReveal from '../components/ScrollReveal';
-import CTABanner from '../components/CTABanner';
+import ScrollReveal from '@/app/components/ScrollReveal';
+import CTABanner from '@/app/components/CTABanner';
 
 export const metadata: Metadata = {
   title: 'About Us',
